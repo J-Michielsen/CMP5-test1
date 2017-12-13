@@ -9,7 +9,7 @@ body{
 .banner {
   background-color: white;
   background-image: url("/img/De-Lijn-bus.jpg");
-  background-position: cover;
+  background-size: cover;
 }
 
 h1{
