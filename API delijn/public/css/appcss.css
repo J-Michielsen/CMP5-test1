@@ -1,25 +1,26 @@
 body{
   font-family: helvetica;
   width: 50%;
-  margin-left: 30%;
+  margin: auto;
   background: rgb(253, 221, 0);
 }
 
 .banner {
   background-color: white;
   background-image: url("/img/De-Lijn-bus.jpg");
+  background-position: center;
+  width: 100%;
+  margin: auto;
 }
 
 h1{
   color: green;
 }
+
 h2{
   font-size: 2em;
   margin-top: 10%;
   margin-bottom: 5%;
-}
-p{
-
 }
 
 a{
