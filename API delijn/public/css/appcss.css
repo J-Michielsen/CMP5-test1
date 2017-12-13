@@ -5,6 +5,11 @@ body{
   background: rgb(253, 221, 0);
 }
 
+.banner {
+  background-color: white;
+  background-image: url("/img/De-Lijn-bus.jpg");
+}
+
 h1{
   color: green;
 }
