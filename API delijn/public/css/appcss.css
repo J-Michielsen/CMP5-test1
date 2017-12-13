@@ -1,7 +1,8 @@
 body{
   font-family: helvetica;
   width: 50%;
-  margin-left: 30%;
+  margin: auto;
+  margin-bottom: 20px;
   background: rgb(253, 221, 0);
 }
 
@@ -14,9 +15,10 @@ h1{
   color: green;
 }
 h2{
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 10%;
   margin-bottom: 5%;
+  text-transform: uppercase;
 }
 p{
 
@@ -33,15 +35,23 @@ a:visited{
 
 p{
   padding: 2%;
+  display: inline-block;
 }
 
 li{
   margin-top: 5%;
-  width: 40px;
+  width: 100%;
 }
 
 ul{
   background: white;
-  padding: 10%;
-  border-radius: 20px;;
+  padding: 5%;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
+-moz-box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
+box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
+}
+
+p.lijnNummer{
+  border-radius: 5px;
 }

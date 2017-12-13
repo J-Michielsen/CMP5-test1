@@ -11,6 +11,7 @@
                          for (var j = 0; j < halte[i].lijnen.length; j++) {
                               var li = document.createElement("LI");
                               var pLijnNr = document.createElement("P");
+                              pLijnNr.setAttribute("class", "lijnNummer");
                               var pLijnBestem = document.createElement("P");
                               var pLijnNrT = document.createTextNode(halte[i].lijnen[j].lijnNummer);
                               var pLijnBestemT = document.createTextNode(halte[i].lijnen[j].bestemming);
