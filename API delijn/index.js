@@ -21,7 +21,7 @@ request('https://www.delijn.be/rise-api-core/haltes/indebuurt/103787/194286/300'
 });
 
 var halte;
-request('https://www.delijn.be/rise-api-core/haltes/titel/200144', function (error, response, body) {
+request('https://www.delijn.be/rise-api-core/haltes/vertrekken/200144/10', function (error, response, body) {
   console.log('Status:', response.statusCode);
   console.log('Headers:', JSON.stringify(response.headers));
   console.log('Response:', body);

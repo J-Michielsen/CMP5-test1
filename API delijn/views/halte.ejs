@@ -8,8 +8,21 @@
           <h1>TEST</h1>
           <script type="text/javascript">
                var halte = <%- data %>;
-               var title = document.getElementsByTagName('h2');
-               title.innerHTML = "testtt";
+               var title = document.getElementsByTagName('h1')[0];
+               console.log(halte.lijnen.length);
+               var ul = document.createElement('UL');
+               var li = document.createElement('LI');
+               var pNummer = document.createElement('P');
+               pNummer.setAttribute("class", "LijnNummer");
+               var pNaam = document.createElement('P');
+               pNaam.setAttribute("class", "LijnNaam");
+               var pAankomst = document.createElement('P');
+               pAankomst.setAttribute("class", "LijnAankomst");
+               li.appendChild(pNummer);
+               li.appendChild(pNaam);
+               li.appendChild(pAankomst);
+               ul.appendChild(li);
+               document.body.appendChild(ul);
           </script>
      </body>
 </html>
