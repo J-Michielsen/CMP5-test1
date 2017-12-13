@@ -1,10 +1,47 @@
+body{
+  font-family: helvetica;
+  width: 50%;
+  margin-left: 30%;
+  background: rgb(253, 221, 0);
+}
+
+.banner {
+  background-color: white;
+  background-image: url("/img/De-Lijn-bus.jpg");
+}
+
 h1{
   color: green;
 }
 h2{
-  font-size: 40px;
-  margin-top: 30px;
+  font-size: 2em;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 p{
-  
+
+}
+
+a{
+  text-decoration: none;
+  color: rgb(55, 61, 67);
+}
+
+a:visited{
+  color: rgb(55, 61, 67);
+}
+
+p{
+  padding: 2%;
+}
+
+li{
+  margin-top: 5%;
+  width: 40px;
+}
+
+ul{
+  background: white;
+  padding: 10%;
+  border-radius: 20px;;
 }
