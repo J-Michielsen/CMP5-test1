@@ -1,6 +1,6 @@
 body{
   font-family: helvetica;
-  width: 50%;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   background: rgb(253, 221, 0);
@@ -9,6 +9,7 @@ body{
 .banner {
   background-color: white;
   background-image: url("/img/De-Lijn-bus.jpg");
+  background-position: cover;
 }
 
 h1{
@@ -18,6 +19,7 @@ h2{
   font-size: 1.5em;
   margin-top: 10%;
   margin-bottom: 5%;
+  margin-left: 15%;
   text-transform: uppercase;
 }
 p{
@@ -50,7 +52,10 @@ ul{
   -webkit-box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
 -moz-box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
 box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
+width: 70%;
+margin: auto;
 }
+
 
 p.lijnNummer{
   border-radius: 5px;
