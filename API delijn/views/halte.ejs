@@ -1,12 +1,13 @@
 <% include header %>
+     <div id="haltes">
           <script type="text/javascript">
 
           var halte = <%- data %>;
                for (var i = 0; i < halte.lijnen.length; i++) {
                     console.log("test")
                     var ul = document.createElement('UL');
-                    var li = document.createElement('LI');
 
+                    var li = document.createElement('LI');
                     var pNummer = document.createElement('P');
                     pNummer.setAttribute("class", "LijnNummer");
                     var pNummerTxt = document.createTextNode(halte.lijnen[i].lijnNummer);
@@ -26,7 +27,6 @@
                     li.appendChild(pNaam);
                     li.appendChild(pAankomst);
                     ul.appendChild(li);
-
                     var backgroundColor = halte.lijnen[i].kleurAchterGrondRand;
                     var backgroundColorBorder = halte.lijnen[i].kleurAchterGrondRand;
                     var color = halte.lijnen[i].kleurVoorGrond;

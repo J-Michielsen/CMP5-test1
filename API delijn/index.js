@@ -30,7 +30,8 @@ request('https://www.delijn.be/rise-api-core/haltes/vertrekken/201147/10', funct
 
 app.get('/indebuurt', function(req, res) {
     res.render('indebuurt', {
-      data: inDeBuurt
+      data: inDeBuurt,
+      terug: ""
     });
 });
 
@@ -41,7 +42,8 @@ app.get('/', function(req, res) {
 
 app.get('/halte/:number', function(req, res) {
     res.render('halte', {
-         data: halte
+         data: halte,
+         terug: "indebuurt"
     });
 });
 
