@@ -1,0 +1,80 @@
+body {
+  font-family: "Raleway";
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: orangered;
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: mediumseagreen;
+  font-weight: bold;
+  font-size: 2.2em;
+  padding: 0.5em;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 1.2em;
+}
+
+a:hover {
+  color: limegreen;
+}
+
+nav {
+  font-family: "Special Elite";
+  color: red;
+  background-color: black;
+  padding: 0.4em;
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  color: white;
+  font-size: 0.6em;
+  background-color: black;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+h2 {
+  width: 90%;
+  padding-top: 2em;
+  padding-left: 2em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+p {
+  width: 90%;
+  padding: 2em;
+  margin: auto;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+img {
+  width: 30%;
+  padding: 2%;
+}
+
+span {
+  font-style: italic;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+.home {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-style: italic;
+  font-size: 0.6em;
+  text-align: right;
+}
