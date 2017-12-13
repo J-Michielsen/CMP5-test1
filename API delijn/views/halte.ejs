@@ -5,24 +5,44 @@
           <title>tedt</title>
      </head>
      <body>
-          <h1>TEST</h1>
           <script type="text/javascript">
-               var halte = <%- data %>;
-               var title = document.getElementsByTagName('h1')[0];
-               console.log(halte.lijnen.length);
-               var ul = document.createElement('UL');
-               var li = document.createElement('LI');
-               var pNummer = document.createElement('P');
-               pNummer.setAttribute("class", "LijnNummer");
-               var pNaam = document.createElement('P');
-               pNaam.setAttribute("class", "LijnNaam");
-               var pAankomst = document.createElement('P');
-               pAankomst.setAttribute("class", "LijnAankomst");
-               li.appendChild(pNummer);
-               li.appendChild(pNaam);
-               li.appendChild(pAankomst);
-               ul.appendChild(li);
-               document.body.appendChild(ul);
+
+          var halte = <%- data %>;
+               for (var i = 0; i < halte.lijnen.length; i++) {
+                    console.log("test")
+                    var ul = document.createElement('UL');
+                    var li = document.createElement('LI');
+
+                    var pNummer = document.createElement('P');
+                    pNummer.setAttribute("class", "LijnNummer");
+                    var pNummerTxt = document.createTextNode(halte.lijnen[i].lijnNummer);
+                    pNummer.appendChild(pNummerTxt);
+
+                    var pNaam = document.createElement('P');
+                    pNaam.setAttribute("class", "LijnNaam");
+                    var pNaamTxt = document.createTextNode(halte.lijnen[i].bestemming);
+                    pNaam.appendChild(pNaamTxt);
+
+                    var pAankomst = document.createElement('P');
+                    pAankomst.setAttribute("class", "LijnAankomst");
+                    var pAankomstTxt = document.createTextNode(halte.lijnen[i].vertrekTijd);
+                    pAankomst.appendChild(pAankomstTxt);
+
+                    li.appendChild(pNummer);
+                    li.appendChild(pNaam);
+                    li.appendChild(pAankomst);
+                    ul.appendChild(li);
+
+                    var backgroundColor = halte.lijnen[i].kleurAchterGrondRand;
+                    var backgroundColorBorder = halte.lijnen[i].kleurAchterGrondRand;
+                    var color = halte.lijnen[i].kleurVoorGrond;
+                    
+                    pNummer.style.background = backgroundColor;
+                    pNummer.style.border = "solid 1px" + backgroundColorBorder;
+                    pNummer.style.color = color;
+
+                    document.body.appendChild(ul);
+               }
           </script>
      </body>
 </html>
