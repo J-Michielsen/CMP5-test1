@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-     <head>
-          <meta charset="utf-8">
-          <title>tedt</title>
-     </head>
-     <body>
+<% include header %>
           <script type="text/javascript">
 
           var halte = <%- data %>;
@@ -36,7 +30,7 @@
                     var backgroundColor = halte.lijnen[i].kleurAchterGrondRand;
                     var backgroundColorBorder = halte.lijnen[i].kleurAchterGrondRand;
                     var color = halte.lijnen[i].kleurVoorGrond;
-                    
+
                     pNummer.style.background = backgroundColor;
                     pNummer.style.border = "solid 1px" + backgroundColorBorder;
                     pNummer.style.color = color;

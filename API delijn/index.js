@@ -45,8 +45,6 @@ app.get('/halte/:number', function(req, res) {
     });
 });
 
-
-
-
+app.use(express.static('public'))
 
 app.listen(8080);
