@@ -1,16 +1,19 @@
 <% include header %>
 <div class="banner">
-  <img src="/img/De_Lijn_svg.png" width="90px;">
+  <img class="logo" src="/img/De_Lijn_svg.png" width="85px;">
 </div>
-<h1>zoek verkooppunten in uw gemeente van De Lijn</h1>
-  <div class="loca info">
 
+<div class="zoek-kader">
+<h1>Zoek Haltes</h1>
+<img src="/img/icon.png" class="icon" alt="icon">
+  <div class="loca info">
     <form method="get" action="/indebuurt">
       <input id="lat" type="text" name="lat" style="display: none">
       <input id="long" type="text" name="long" style="display: none">
-      <input id="button"type="submit" value=">" disabled>
+      <input id="button" type="image" src="/img/pijl.png" disabled>
     </form>
   </div>
+</div>
 
   <script>
   // Locatie krijgen van gebruiker en ineens in form plaatsen
