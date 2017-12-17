@@ -54,12 +54,14 @@ li{
 ul{
   background: white;
   padding: 5%;
+  padding-top: 2%;
   border-radius: 20px;
   -webkit-box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
 -moz-box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
 box-shadow: 10px 11px 0px 0px rgba(163,140,28,0.75);
 width: 70%;
 margin: auto;
+margin-bottom: 30px;
 }
 
 
